@@ -8,7 +8,7 @@ nomes = []
 preco_original = []
 preco_final = []
 
-for i in range(1,3):
+for i in range(1,1435):
     print(i)
     url = urlb + str(i)
     r = requests.get(url)
