@@ -23,7 +23,6 @@ for i in range(1,46):
 
     precos = p.findAll('div', {'class': 'col search_price discounted responsive_secondrow'})
 
-
     for preco in precos:
         preco_sem.append(preco.strike.text.replace('R$ ','').replace(',','.'))
         precob.append(preco.text.replace('\nR$ ','').replace(',','.').replace('R$ ','').replace('\t\t\t\t\t\t\t',''))
