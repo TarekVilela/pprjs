@@ -6,7 +6,6 @@ def pegar_dados_imdb(nome,link,temporadas):
     print(nome)
     r = []
     q = []
-    q2 = []
     nomes = []
     temps = []
 
@@ -34,13 +33,8 @@ def pegar_dados_imdb(nome,link,temporadas):
 
         for l in range(1,len(c1)+1):
             temps.append('S'+str(i))
-
-    for k in q:
-        q2.append(int(k.replace('"','').replace(',','')))
-
-    print(len(nomes))
-    print(len(r))
-    print(len(q))
+    
+    q = [int(m.replace('"','').replace(',','')) for m in q]
 
     with open(nome+'.csv', 'a', newline='', encoding='utf8') as f:
         w = csv.writer(f, delimiter=',')
