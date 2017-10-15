@@ -34,7 +34,3 @@ ggplot(data = friends,aes(x=as.character(neptemp),y=nota,color=as.character(nept
   labs(x = 'Episódio na temporada',y='Nota') +
   scale_x_discrete(limits=1:25) + 
   h
-
-  
-
-ggsave('violin-jitter-epi.png',type = 'cairo-png',scale=2,dpi = 500)
