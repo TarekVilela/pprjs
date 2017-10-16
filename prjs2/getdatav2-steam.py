@@ -34,9 +34,6 @@ for i in range(1,1435):
             preco_original.append(preco_final_limpo)
             preco_final.append(preco_final_limpo)
 
-preco_original = [float(i) for i in preco_original]
-preco_final = [float(i) for i in preco_final]
-
 with open('steam-tdos.csv', 'a', newline='', encoding='utf8') as f:
     w = csv.writer(f, delimiter=',')
     for i in range(len(nomes)):
