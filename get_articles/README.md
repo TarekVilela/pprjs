@@ -17,5 +17,4 @@ Sites supported so far:
 
 Changelog:
   - v0.2:
-  
       + added Estadão
