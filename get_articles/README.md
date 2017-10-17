@@ -15,7 +15,7 @@ Sites supported so far:
   - G1
   - Estadão
 
-
 Changelog:
   - v0.2:
-      - added Estadão
+  
+      + added Estadão
