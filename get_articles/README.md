@@ -9,11 +9,7 @@ Requirements:
   - get_article('https://www.theatlantic.com/business/archive/2017/10/midwestern-public-research-universities-funding/542889/')
   - get_article('list.txt')
   
-Sites supported so far:
-  - The Atlantic
-  - Yahoo
-  - G1
-  - Estadão
+Sites supported so far: The Atlantic, Yahoo, G1 and Estadão. 
 
 Changelog:
   - v0.2:
