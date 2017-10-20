@@ -29,17 +29,14 @@ if q > sum(estoque):
 
 else:
     usados = []
-    vezes = 0
     for i in range(len(estoque)-1,-1,-1):
         if q > estoque[i]:
             usados.append(estoque[i])
-            q = q - estoque[i]
-            vezes += 1 
+            q = q - estoque[i] 
 
         elif q <= estoque[i]:
             usados.append(q)
             q = 0
-            vezes += 1
             break
         
     custo = custo[0:len(usados)]  
