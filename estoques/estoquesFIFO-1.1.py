@@ -5,6 +5,7 @@ while True:
     estoque_add = input('Quantidade adquirida: ')
     if estoque_add == '':
         break
+        
     else:
         estoque.append(int(estoque_add))
         custo_add = input('Custo de aquisição: ')
