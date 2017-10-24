@@ -25,15 +25,3 @@ def R(B,C=151,p=0.8,T=359.14):
         receitaEsperada += prob(p,B,i)*(B*T-F(i,C))
     
     return receitaEsperada
-
-B = []
-receita = []
-for j in range(1,301):
-    B.append(j)
-    receita.append(R(j))
-
-with open('pzeronove' + '.csv', 'a', newline='',encoding='utf8') as f:
-        w = csv.writer(f, delimiter=',')
-        w.writerow(['B','ReceitaEsperada'])
-        for i in range(len(B)):
-            w.writerow([B[i],receita[i]])
