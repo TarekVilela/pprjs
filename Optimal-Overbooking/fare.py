@@ -1,5 +1,4 @@
 import math
-import csv
 
 def binomial(x,y):
     r = math.factorial(x)/(math.factorial(y)*math.factorial(x-y))
