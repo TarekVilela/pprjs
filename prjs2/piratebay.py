@@ -56,14 +56,3 @@ def baixar(arquivo, tipo):
                 continue
 
             break
-
-
-print('Insira o número do dia:')
-numero = input('> ')
-start = time.time()
-arquivo_filmes = 'dados-'+numero+'-filmes.csv'
-arquivo_jogos = 'dados-'+numero+'-jogos.csv'
-
-baixar(arquivo_filmes, 'filmes')
-baixar(arquivo_jogos,'jogos')
-print(time.time()-start)
