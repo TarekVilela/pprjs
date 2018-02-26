@@ -5,6 +5,9 @@ import csv
 with open('C:/Users/tarek/Desktop/acs.txt') as f:
     c = f.readlines()
 
+with open('splits.csv','w') as f:
+    f.write('sep=,\n')    
+    
 acs = [x.strip() for x in c]
 splits_t = []
 ratios_t = []
