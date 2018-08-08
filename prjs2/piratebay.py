@@ -27,22 +27,16 @@ def baixar(arquivo, tipo):
                 c_seeders = page.findAll('td', {'align': 'right'})
 
                 nomes = []
-                for i in c_nomes:
-                    nomes.append(i.a.text.replace('|',''))
-
                 sl = []
-                for i in c_seeders:
-                    sl.append(i.text)
-
                 seeders = []
-                for i in sl[0:len(sl):2]:
-                    seeders.append(i)
-
                 leechers = []
-                for i in sl[1:len(sl):2]:
+                
+                for a,b,c,d in zip(c_nomes,c_seeders,s1[0:len(s1):2],s1[1:len(s1):2]):
+                    nomes.append(a.a.text.replace('|',''))
+                    sl.append(b.text)
+                    seeders.append(c)
                     leechers.append(i)
-
-
+                    
                 with open(arquivo, 'a', newline='',encoding='utf8') as f:
                     w = csv.writer(f, delimiter=',')
                     for i in range(len(nomes)):
