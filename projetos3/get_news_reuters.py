@@ -30,10 +30,7 @@ with open('links_reuters.txt') as f:
         except:
             pass
 
-dates2 = []
-for i in dates:
-    t = time.strptime(i,'%B %d, %Y')
-    dates2.append(time.strftime('%Y-%m-%d',t))
+dates2 = [time.strftime('%Y-%m-%d',time.strptime(i,'%B %d, %Y')) for i in dates]
 
 with open('teste.csv', 'a', newline='', encoding='utf8') as f:
     w = csv.writer(f, delimiter=',')
