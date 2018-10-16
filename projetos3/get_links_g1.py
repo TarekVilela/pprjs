@@ -12,8 +12,7 @@ for i in range(0,2000):
 
     c = p.findAll('div',{'class':'feed-post-body-title gui-color-primary gui-color-hover '})
 
-    for k in c:
-        links.append(k.a['href'])
+    links = [k.a['href'] for k in c]
 
 with open('links.txt','a') as f:
     f.write('\n'.join(links))
